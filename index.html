@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Welcome to my Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>My Portfolio</h1>
+						<p style = font-size:30px>Hi! My name is Chanakarn Luangpirom and this is my portfolio. This page demonstrate my past<br/>
+						data science related projects that I've worked on. It contains a brief summary of what I've done and also<br/>
+					a link to each individual project repository for more details and code!</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="https://github.com/Northerman" class="logo">MY GITHUB</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">Courses & Certifications</a></li>
+							<li><a href="elements.html">About me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/chanakarn-luangpirom-582589179/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/Northerman/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.kaggle.com/sanxuwen" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Dec 2021</span>
+									<h2><a href="https://github.com/Northerman/object_detection_hackathon">Object Detection Hackathon</a></h2>
+									<ul>
+										<li>Used pretrained model YOLOv5s to detect underwater pipes and pipe parts</li>
+										<li>Deployed using Docker into AWS</li>
+										<li>Utilize Python's fastapi to handle requests</li>
+									</ul>
+								</header>
+								<a class="image main"><img src="https://github.com/Northerman/portfolio/blob/master/images/pipe.png?raw=True" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/Northerman/object_detection_hackathon" class="button large">View on Github</a></li>
+								</ul>
+							</article>
+							<article class="post featured">
+								<header class="major">
+									<span class="date">July 2021</span>
+									<h2><a href="https://github.com/Northerman/salary_bot">Trading Bot Deployed on AWS</a></h2>
+
+									<ul>
+										<li>Trading bot deployed on AWS utilizing ECR (Elastic Container Registry) to deploy a docker image.</li>
+										<li>Trade Strategy: RSI (Relative Strength Index) overbought/oversold.</li>
+										<li>Utilize AWS EventBridge to execute trade strategy when market open.</li>
+										<li>Use Amazon SNS to Send SMS to phone tracking daily portfolio change.</li>
+										<li>Store data using Amazon RDS logging trade positions into the database for further analytics.</li>
+										<li>Connect Analytics tool like tableau for analysis.</li>
+									</ul>
+								</header>
+								<a class="image main"><img src="https://github.com/Northerman/aws_tradingbot/blob/main/trade_bot.jpg?raw=true" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/Northerman/aws_tradingbot" class="button large">View on Github</a></li>
+								</ul>
+							</article>
+							<article class="post featured">
+								<header class="major">
+									<span class="date">August 2020</span>
+									<h2><a href="https://github.com/Northerman/salary_bot">Salary Prediction Chatbot</a></h2>
+
+									<ul>
+										<li>Scraped around 10,000 job postings from jobsdb using python and BeautifulSoup. :<a href="https://colab.research.google.com/drive/1CxPKttPc71m3fAs-ZbRyHzjzmzwEeQ-_?usp=sharing"><b>Data Scraping Colab</b></a></li>
+										<li>Perform multiple text data cleaning such as salary & working experience extraction from text using regex.</li>
+										<li>Perform exploratory data analysis to gain insights for jobs using plotly & seaborn. : <a href="https://colab.research.google.com/drive/1Ipjt0Be_ZJM1BhYPNchVwGvKjPOqco4V?usp=sharing"><b>EDA & Cleaning Colab</b></a></li>
+										<li>Create a tree-based model to predict job salary given experience year & job function.</li>
+										<li>Built two salary prediction chatbot & models. (1.Using local database 2.Using Firebase)</li>
+										<li>Built a flask API endpoint hosted locally and use ngrok to communicate with dialogflow to identify user’s intent.</li>
+									</ul>
+								</header>
+								<a class="image main"><img src="https://github.com/Northerman/salary_bot/blob/master/images/chatbot_flow.png?raw=true" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/Northerman/salary_bot" class="button large">View on Github</a></li>
+								</ul>
+							</article>
+							<article class="post featured">
+								<header class="major">
+									<span class="date">April 2020</span>
+									<h2><a href="https://github.com/Northerman/solar_forecast">Solar Irradiance Forecasting</a></h2>
+									<ul>
+										<li>Using sensor measurement data collected from year 2017-2018 to predict solar irradiance</li>
+										<li>Perform data imputation based on analysis and assumptions e.g. Linear Interpolation, Column Deletions, <br /> Row Deletions, Replace with Average.</li>
+										<li>Perform exploratory data analysis identifying seasonality and irradiance at different time of day using python matplotlib.</li>
+										<li>Using a unique train-validation-test spliting method to adjust for data's seasonality nature.</li>
+										<li>Compare 3 types prediction methods (Baseline, Linear, Tree-based) and identify their pros and cons based on mean bias error (MBE) analysis.</li>
+									</ul>
+								</header>
+								<a class="image main"><img src="https://drive.google.com/uc?export=view&id=1OAxYddbTtNz1nuWsuuMxXxetMRob_xES" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/Northerman/solar_forecast" class="button large">View on Github</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">June - August 2020</span>
+										<h2><a href="https://www.kaggle.com/sanxuwen/shopee-sentiment-analysis-2nd-place-solution">Shopee Data Analytics<br />
+											Code League<br />
+											(Sentiment Analysis)</a></h2>
+									</header>
+									<a class="image fit"><img src="https://storage.googleapis.com/kaggle-datasets-images/810142/1387846/275f7daaa9864db9f5df0a9d0733212a/dataset-card.jpg?t=2020-08-01-13-32-36" alt="" /></a>
+									<ul>
+										<li><b>2nd place out of 356 teams (top 1%)</b></li>
+										<li>Given product reviews, build a model to correctly predict user ratings (1 to 5) for the review.</li>
+										<li>Competition Length : 2 weeks</li>
+										<li>Perfom multiple text data cleaning, undersamling, and an ensemble of GPT-2, Roberta, and BERT models to predict ratings.</li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="https://www.kaggle.com/sanxuwen/shopee-sentiment-analysis-2nd-place-solution" class="button">View on Kaggle</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">June - August 2020</span>
+										<h2><a href="https://www.kaggle.com/sanxuwen/shopee-marketing-analytics-tans">Shopee Data Analytics<br />
+											Code League<br />
+											(Marketing Analytics)</a></h2>
+									</header>
+									<a class="image fit"><img src="https://storage.googleapis.com/kaggle-datasets-images/810142/1387846/275f7daaa9864db9f5df0a9d0733212a/dataset-card.jpg?t=2020-08-01-13-32-36" alt="" /></a>
+									<ul>
+										<li><b>16th place out of 368 teams (top 7%)</b></li>
+										<li>Build a model that can predict whether a user opens the emails sent by Shopee.</li>
+										<li>Competition Length : 1 week</li>
+										<li>Perform tabular data cleaning and applied Tomeklinks undersampling method to help model generalize & optimize probability cut-off threshold on catboost model to obtain the best Matthews correlation coefficient.</li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="https://www.kaggle.com/sanxuwen/shopee-marketing-analytics-tans" class="button">View on Kaggle</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">June - August 2020</span>
+										<h2><a href="https://www.kaggle.com/sanxuwen/product-detection-tans">Shopee Data Analytics<br />
+											Code League<br />
+											(Product Detection)</a></h2>
+									</header>
+									<a class="image fit"><img src="https://storage.googleapis.com/kaggle-datasets-images/810142/1387846/275f7daaa9864db9f5df0a9d0733212a/dataset-card.jpg?t=2020-08-01-13-32-36" alt="" /></a>
+									<ul>
+										<li><b>63rd out of 823 teams (top 8%)</b></li>
+										<li>Build a multiple image classification model. Dataset include ~100k images within 42 different categories.</li>
+										<li>Competition Length : 2 weeks</li>
+										<li>Perform image augmentation and ensemble of resnet, inception, inceptionresnet models for final predictions. </li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="https://www.kaggle.com/sanxuwen/product-detection-tans" class="button">View on Kaggle</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">June - August 2020</span>
+										<h2><a href="https://www.kaggle.com/sanxuwen/shopee-logistics-tans">Shopee Data Analytics<br />
+											Code League<br />
+											(Logistics)</a></h2>
+									</header>
+									<a class="image fit"><img src="https://storage.googleapis.com/kaggle-datasets-images/810142/1387846/275f7daaa9864db9f5df0a9d0733212a/dataset-card.jpg?t=2020-08-01-13-32-36" alt="" /></a>
+									<ul>
+										<li><b>96th out of 547 teams (top 18%)</b></li>
+										<li>Identify all the orders that are considered late depending on the Service Level Agreements (SLA).</li>
+										<li>Competition Length : 3 hours</li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="https://www.kaggle.com/sanxuwen/shopee-logistics-tans" class="button">View on Kaggle</a></li>
+									</ul>
+								</article>
+							</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+66)847203366</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">chanakarn.luang@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/chanakarn-luangpirom-582589179/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Northerman/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.kaggle.com/sanxuwen" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<!-- <div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
